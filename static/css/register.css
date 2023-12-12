@@ -1,0 +1,158 @@
+@font-face {
+	font-family: 'Elizabeta Modern';
+	src: url('../fonts/elizabeta_modern.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/elizabeta_modern.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/elizabeta_modern.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/elizabeta_modern.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/elizabeta_modern.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/elizabeta_modern.svg#elizabeta_modern') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+    font-family: 'Foo';
+    src: url('../fonts/foo.woff2') format('woff2'), url('../fonts/foo.woff') format('woff'), url('../fonts/foo.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DynaPuff-Bold';
+    src: url('../fonts/DynaPuff-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: bold;
+}
+
+body {
+ background-color: #000000;
+ overflow-x:hidden;
+ overflow-y:hidden;
+}
+
+h3 {
+    font-family: 'Foo';
+    font-size: 20px;
+    color: white;
+}
+
+/*Навигационнвя панель*/
+.navbar{
+    margin-top: 1em;
+    background:#00000000;
+   }
+   
+/*color text*/
+.nav-link , .navbar-brand{
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Elizabeta Modern'
+}
+
+.nav-link{
+    margin-right: 20px !important;
+    border: 2px solid rgba(0, 0, 0, 0)
+}
+
+.navbar-brand:hover{
+    color:#ffffff
+}
+
+/*цвет при наведении*/
+.nav-link:hover{
+    background: #ffffff00;
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-toggler{
+     background:#fffffffa !important;
+}
+
+/*Main*/
+
+.main {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10em;
+}
+
+p {
+    color: white;
+    font-family: 'Elizabeta Modern'
+}
+
+/*Registration form*/
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center
+}
+
+
+.reg-button {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-family: 'Elizabeta Modern';
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.reg-button:hover {
+    border: 1px solid white;
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/*Decorations*/
+
+.decoration-join {
+    border-bottom-width: 1px;
+    border-color: #ffffff;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-radius: 100%;
+    flex: none;
+    height: 252px;
+    left: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 44px;
+    transform: rotate(-124deg);
+    width: 479px;
+}
+
+.decoration-join2 {
+    border-bottom-width: 1px;
+    border-color: #ffffff;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-radius: 100%;
+    flex: none;
+    height: 145px;
+    right: 28px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 44px;
+    transform: rotate(-124deg);
+    width: 334px;
+
+
+.message {
+    color: white;
+}

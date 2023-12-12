@@ -1,0 +1,376 @@
+@font-face {
+	font-family: 'Elizabeta Modern';
+	src: url('../fonts/elizabeta_modern.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/elizabeta_modern.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/elizabeta_modern.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/elizabeta_modern.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/elizabeta_modern.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/elizabeta_modern.svg#elizabeta_modern') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+    font-family: 'Foo';
+    src: url('../fonts/foo.woff2') format('woff2'), url('../fonts/foo.woff') format('woff'), url('../fonts/foo.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DynaPuff-Bold';
+    src: url('../fonts/DynaPuff-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: bold;
+}
+
+body {
+ background-color: #000000;
+ overflow-x:hidden;
+}
+
+h3 {
+    font-family: 'Foo';
+    font-size: 20px;
+    color: white;
+}
+
+/*Навигационнвя панель*/
+.navbar{
+    margin-top: 1em;
+    background:#00000000;
+   }
+   
+/*color text*/
+.nav-link , .navbar-brand{
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Elizabeta Modern'
+}
+
+.nav-link{
+    margin-right: 20px !important;
+    border: 2px solid rgba(0, 0, 0, 0)
+}
+
+.navbar-brand:hover{
+    color:#ffffff
+}
+
+/*цвет при наведении*/
+.nav-link:hover{
+    background: #ffffff00;
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-toggler{
+     background:#fffffffa !important;
+}
+
+
+
+/*нужно для определения размера шрифта GCC*/
+:root {
+    --base-scale:calc(100vw/75);
+    --h2-font-size:max(20em, min(80em, calc(var(--base-scale)*4)))
+}
+
+.main {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5em;
+
+}
+
+/*Заголовок GCC*/
+header {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 2px solid white;
+ border-radius: 60px;
+ padding: 10px;
+}
+
+p.header-style {
+    font-family:'DynaPuff-Bold';
+    color:rgb(255, 255, 255);
+    font-size: 25vw;
+    /*font-size: var(--h2-font-size)*/
+}
+
+/*декорации*/
+
+
+
+/*Блоки текста с картинками*/
+
+.item-container {
+    display: grid;
+    max-width: 1000px;
+    margin-top: 5em;
+    
+    gap: 20px;
+    grid-auto-rows: minmax(0,1fr);
+    grid-template-columns: repeat(5,minmax(20px,1fr));
+    grid-template-rows: repeat(3,minmax(0,1fr));
+    height: 600px;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+.item-1 {
+    align-items: flex-start;
+    align-self: center;
+    background-color: #ebebeb;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+    height: 100%;
+    justify-content: center;
+    justify-self: start;
+    overflow: hidden;
+    padding: 60px;
+    position: relative;
+    width: 100%;
+}
+
+.item-2 {
+    align-self: start;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    flex: none;
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+    height: 100%;
+    justify-self: start;
+    
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #ebebeb;
+    
+}
+
+.item-3 {
+    align-self: start;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    flex: none;
+    grid-column: auto / span 2;
+    height: 100%;
+    justify-self: start;
+    
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.item-4 {
+    align-items: flex-start;
+    align-self: center;
+    background-color: #ebebeb;
+    border-radius: 200px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+    grid-column: auto / span 3;
+    height: 100%;
+    justify-content: center;
+    justify-self: start;
+    overflow: hidden;
+    padding: 60px;
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    object-position: center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+h1.txt {
+    margin: 5%;
+    
+    font-family: 'Elizabeta Modern';
+    font-size: 1vw;
+}
+
+.txt1-line {
+    background-color: #000000;
+    flex: none;
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+}
+
+/*books already read*/
+.readed-books {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5em;
+}
+
+.books-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row-books-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.year-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.join-us {
+    margin-top: 5em;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10em;
+}
+
+.join-us-row {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center
+    
+}
+
+.join-us-button {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-family: 'Elizabeta Modern';
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.join-us-button:hover {
+    border: 1px solid white;
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/*Decorations*/
+
+/*header*/
+
+.decoration-header {
+    border-bottom-width: 1px;
+    border-color: #ffffff;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-radius: 100%;
+    flex: none;
+    height: 800px;
+    left: -200px;
+    overflow: hidden;
+    position: absolute;
+    top: 281px;
+    transform: rotate(44deg);
+    width: 396px;
+}
+
+.decoration-items {
+    border-bottom-width: 1px;
+    border-color: #ffffff;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-radius: 100%;
+    bottom: 77px;
+    flex: none;
+    height: 305px;
+    overflow: hidden;
+    position: absolute;
+    right: -327px;
+    transform: rotate(115deg);
+    width: 578px;
+
+}
+
+.decoration-join {
+    border-bottom-width: 1px;
+    border-color: #ffffff;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-radius: 100%;
+    flex: none;
+    height: 252px;
+    left: -126px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -1157px;
+    transform: rotate(-124deg);
+    width: 479px;
+}
+
+.decoration-join2 {
+    border-bottom-width: 1px;
+    border-color: #ffffff;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-radius: 100%;
+    flex: none;
+    height: 252px;
+    left: -193px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -1175px;
+    transform: rotate(150deg);
+    width: 479px;
+}

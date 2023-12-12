@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="static/css/register.css">
+        <meta charset="utf-8">
+        <title>Good Ctulhu Club</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <a class="navbar-brand" href="#">Good Ctulhu Club</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+         <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mr-4">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Books</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Log In</a>
+                </li>
+              </ul>
+              
+            </div>
+         </nav>
+        
+        <div class="main">
+            <div class="reg-form">
+                <p style="font-size: 2vw">Registration:</p>
+                <p>
+                    Enter your login: <br />
+                    <input name="login" id="login" />
+                </p>
+                <p>
+                    Enter your password: <br />
+                    <input name="password" id="password" type="password" />
+                </p>
+
+                <button onclick="register()" class="reg-button">Register</button>
+
+                <div class="decoration-join"></div>
+                <div class="decoration-join" style="transform: rotate(170deg);"></div>
+                <div class="decoration-join2"></div>
+                <div class="decoration-join2" style="transform: rotate(170deg);"></div>
+                
+                <div id="message" class="message" style="margin-top: 2em; color: white"> </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" src='static/js/register.js'></script>
+    </body>
+</html>
